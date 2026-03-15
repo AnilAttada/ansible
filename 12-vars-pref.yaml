@@ -11,7 +11,7 @@
     private: false
   tasks:
   - name: print the preffered varibale
-    vars:
-      GREETINGS: "This is from Task variables"
+    # vars:
+    #   GREETINGS: "This is from Task variables"
     ansible.builtin.debug:
         msg: "{{ GREETINGS }}"
