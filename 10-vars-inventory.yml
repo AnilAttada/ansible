@@ -1,4 +1,4 @@
-- name: Vriablles from inventory
+- name: Variables from inventory
   hosts: frontend
   tasks:
   - name: Print learning way
