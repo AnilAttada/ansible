@@ -4,4 +4,6 @@
   tasks:
   - name: Print undefined variable
     ansible.builtin.debug:
-      msg: " Hello, {{ person }}"
+      msg: " Hello, {{ person }}" #Here, Person is undefined. We hadn't defined person anywhere so it shoes error.
+      msg: "Hello, {{ person | default('Anil') }}" #This is the default value we are giving to variable to take if variable is not defined anywhere.
+      #we will provide default value by piping or filtering
