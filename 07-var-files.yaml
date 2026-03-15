@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars_files:
-    course.yaml
+  - course.yaml
   tasks:
   - name: print variables from the file
-  ansible.builtin.debug:
-    msg: "I am learning {{ Course }}, With duration od {{ Duration }}, want to complete it by {{ End }}"
+    ansible.builtin.debug:
+      msg: "I am learning {{ Course }}, With duration od {{ Duration }}, want to complete it by {{ End }}"
