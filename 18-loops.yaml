@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name: Installing the packages in loop
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: present
     loop:
