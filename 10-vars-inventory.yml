@@ -1,0 +1,6 @@
+- name: Vriablles from inventory
+  hosts: frontend
+  tasks:
+  - name: Print learning way
+    ansible.builtin.debug:
+      msg: " Iam Learning {{ Course }} and practicing on {{ Timing }} "
