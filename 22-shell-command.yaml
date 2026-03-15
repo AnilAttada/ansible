@@ -8,7 +8,7 @@
 
   - name: ls output file using command module
     ansible.builtin.command: "ls -ltr"
-    register: command_output
+    register: command_output #In command module output is saved in register
 
   - name: print output
     ansible.builtin.debug:
