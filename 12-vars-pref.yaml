@@ -1,0 +1,17 @@
+- name: Understanding variables preference
+  hosts: local
+  connection: local
+  vars:
+    GREETINGS: "This is from Play Vars"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: GREETINGS
+    prompt: Enter greetings
+    private: false
+  tasks:
+  - name: print the preffered varibale
+    vars:
+      GREETINGS: "This is from Task variables"
+    ansible.builtin.debug:
+        msg: "{{ GREETINGS }}"
