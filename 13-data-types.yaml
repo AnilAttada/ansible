@@ -5,11 +5,11 @@
     Course: "DevSecOps with AWS" #String
     Duration: 120 
     IS_LIVE: true #boolean
-    Concepts: #list
+    Concepts: #list #The o/p come as []
     - linux
     - shell
     - ansible
-    Tools: #map or object
+    Tools: #map or object #The o/p come as {}
       CI: Jenkins
       Scripting: "Shell, ansible"
   tasks:
