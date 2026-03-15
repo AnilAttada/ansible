@@ -1,0 +1,10 @@
+- name: Conditons Concepts
+  hosts: local
+  connection: local
+  vars:
+    NUMBER: 69
+  tasks:
+  - name: print the number less than 100
+    ansible.builtin.debug:
+      msg: "Given number {{ NUMBER }}is less than 100"
+    When: NUMBER < 100
