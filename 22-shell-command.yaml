@@ -7,7 +7,7 @@
     #For simple tasks command is used for complex tasks shell is preffered as it access environment.
 
   - name: ls output file using command module
-    ansible.builtin.command: "ls -ltr"
+    ansible.builtin.command: "ls -l"
     register: command_output #In command module output is saved in register
 
   - name: print output
