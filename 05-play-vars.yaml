@@ -9,3 +9,5 @@
   - name: Print vars
     ansible.builtin.debug:
       msg: "Learning {{ Course }}, With {{ Duration }} duration, by {{ Trainer }}"
+
+#Variable refrence should be surrounded by " ".
