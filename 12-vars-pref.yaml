@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREETINGS: "This is from Play Vars"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: GREETINGS
     prompt: Enter greetings
