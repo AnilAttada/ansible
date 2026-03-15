@@ -2,11 +2,11 @@
   hosts: local
   connection: local
   vars:
-    person: "Anil, kumar, Naidu"
+    persons: "Anil, kumar, Naidu"
   tasks:
   - name: Print undefined variable
     ansible.builtin.debug:
       msg: "Hello, {{ person | default(Attada) }}"
   - name: Print names
     ansible.builtin.debug:
-      msg: "This is {{ person }}"
+      msg: "This is {{ persons }}"
