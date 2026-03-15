@@ -1,0 +1,12 @@
+- name: Loops Concepts
+  hosts: local
+  connection: local
+  tasks:
+  - name: Print names
+    ansible.builtin.debug:
+      msg: "How are you {{ item }}"
+    loop:
+    - Anil
+    - Kumar
+    - Naidu
+    - Attada
