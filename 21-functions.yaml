@@ -24,4 +24,4 @@
     vars:
       IP: "236.34.56.78"
     ansible.builtin.debug:
-      msg: "{{ IP | ansible.utils.ipaddr }}"
+      msg: "{{ IP | ansible.utils.ipaddr }}" #If IP exists, It shows IP as o/p. If not exist is shows msg: false
