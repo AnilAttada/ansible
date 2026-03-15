@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    course: ansible
+    Course: ansible
     Duration: 10 hrs
     Trainer: self
   tasks:
   - name: Print vars
     ansible.builtin.debug:
-      msg: "Learning {{ course }}, With {{ duration }} duration, by {{ trainer }}"
+      msg: "Learning {{ Course }}, With {{ Duration }} duration, by {{ Trainer }}"
