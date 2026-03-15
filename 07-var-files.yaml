@@ -6,4 +6,4 @@
   tasks:
   - name: print variables from the file
     ansible.builtin.debug:
-      msg: "I am learning {{ Course }}, With duration od {{ Duration }}, want to complete it by {{ End }}"
+      msg: "I am learning {{ Course }}, With duration of {{ Duration }}, want to complete it by {{ End }}"
