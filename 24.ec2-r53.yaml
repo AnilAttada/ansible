@@ -33,7 +33,7 @@
       zone: "{{ zone }}"
       record: "{{ item.item }}.{{ zone }}"
       type: A
-      TTL: 1
+      ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
       overwrite: true
