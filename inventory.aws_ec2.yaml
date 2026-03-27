@@ -8,7 +8,7 @@ hostnames:
 - private-ip-address
 keyed_groups:
 - key: tags.Name
-  prefix: "private"
-  separator: ""
+  prefix: "roboshop"
+  separator: "-"
 compose:
   ansible_host: private_ip_address
